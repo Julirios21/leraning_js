@@ -62,3 +62,13 @@ console.log(point1 !== point2)// true
 console.log(point1 instanceof Number)// false 
 // instancia de String
 console.log(point1 instanceof String)// false
+
+
+// Dificultad extra
+
+console.log('----------------')
+for (let i = 10; i <= 55; i++) {
+    if (i % 2 === 0 && i !== 16 && i % 3 !== 0) {
+        console.log(i);
+    }
+}
