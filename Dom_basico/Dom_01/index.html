@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Texto original</p>
+    <button onclick="cambiarTexto()">Cambiar</button>
+
+    <script>
+    function cambiarTexto() {
+        let parrafo = document.getElementById("demo");
+        if (parrafo.innerText === "Texto original") {
+            parrafo.innerText = "Texto cambiado";
+        } else
+            parrafo.innerText = "Texto original"
+    }
+    </script>
+
+    <div></div>
+    
+    <ul id="lista">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    </ul>
+    <button onclick="agregarElemento()">Agregar</button>
+
+    <script>
+    function agregarElemento() {
+        let li = document.createElement("li");
+        li.innerText = "Nuevo Elemento";
+        document.getElementById("lista").appendChild(li);
+    }
+    </script>
+
+</body>
+</html>

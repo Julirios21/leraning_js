@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+    <p id="contador">10</p>
+    <button onclick="iniciarCuentaRegresiva()">Iniciar</button>
+
+    <script>
+    function iniciarCuentaRegresiva() {
+        let tiempo = 10;
+        let intervalo = setInterval(() => {
+            document.getElementById("contador").innerText = tiempo;
+            tiempo--;
+            if (tiempo < 0) {
+                clearInterval(intervalo);
+                document.getElementById("contador").innerText = "¡Tiempo terminado!";
+            }
+        }, 1000);
+    }
+    </script>
+
+</body>
+<script src="script.js"></script>
+</html>
